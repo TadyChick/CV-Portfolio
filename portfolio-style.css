@@ -714,4 +714,10 @@ gap: 30px;
         font-size: 18px;   /* Shrink title so it doesn't wrap awkwardly */
         padding: 10px;
     }
+    .link-wrap{
+        display:flex;
+        flex-direction: column;
+        gap: 50px;
+    }
 }
+
