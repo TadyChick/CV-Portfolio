@@ -429,6 +429,36 @@
                 closeModal();
             }
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Only apply scroll-trigger logic on touch devices
+            if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+                
+                // Select both the showreel and all project cards
+                const allCards = document.querySelectorAll('.project-card, .showreel-card');
+                
+                const observerOptions = {
+                    root: null,
+                    // 'rootMargin' helps trigger the effect slightly before/after 
+                    // the card hits the exact center for a smoother feel
+                    rootMargin: '-10% 0px -10% 0px',
+                    threshold: 0.6 // Card must be 60% visible to "activate"
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-active');
+                        } else {
+                            entry.target.classList.remove('is-active');
+                        }
+                    });
+                }, observerOptions);
+
+                allCards.forEach(card => observer.observe(card));
+            }
+        });
     </script>
 </body>
 </html>
+
