@@ -594,6 +594,18 @@ gap: 30px;
   width:100%;
 }
 
+.project-card.is-active, 
+.showreel-card.is-active {
+    transform: scale(1.05);
+}
+
+.project-card.is-active .play-button,
+.showreel-card.is-active .play-button {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+
 @media (max-width: 1504px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -720,4 +732,5 @@ gap: 30px;
         gap: 50px;
     }
 }
+
 
