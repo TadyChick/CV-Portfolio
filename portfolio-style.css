@@ -735,4 +735,8 @@ gap: 30px;
       font-weight: 300;
       opacity: 0.9;
     }
+    .location, .telephone, .email{
+    font-size: 17px;
 }
+}
+
