@@ -709,8 +709,7 @@ gap: 30px;
     .modal-content {
         width: 100%;       /* Use full available width */
         max-width: 80vw;   /* Ensure it never exceeds the viewport width */
-        border-radius: 8px; /* Slightly smaller radius for mobile */
-        margin-right:70px;
+        border-radius: 8px;
     }
 
     .close-header {
@@ -732,5 +731,6 @@ gap: 30px;
         gap: 50px;
     }
 }
+
 
 
