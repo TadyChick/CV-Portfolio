@@ -2,7 +2,7 @@
 
 This repository contains the source code for my professional portfolio and digital CV. It showcases my work in 3D animation, digital content engineering, and web development.
 
-**[🚀 View Live Portfolio](https://tadychick.github.io/my-portfolio/portfolio.html)**
+**[🚀 View Live Portfolio]([https://tadychick.github.io/my-portfolio/portfolio.html](https://tadychick.github.io/CV-Portfolio/))**
 
 ---
 
