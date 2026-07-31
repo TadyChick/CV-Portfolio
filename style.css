@@ -441,7 +441,7 @@ li {
   background: #fff;
   border-radius: 9px;
   overflow: visible;
-  max-width: 155px;
+  max-width: 165px;
   max-height:50px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: transform 0.4s ease;
@@ -462,7 +462,7 @@ li {
 }
 
 .badge span {
-  padding: 0 8px;
+  padding: 0 4px;
   font-size: 10px;
   font-weight: 700;
   color: var(--dark);

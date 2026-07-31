@@ -45,4 +45,5 @@ The centerpiece of this portfolio is my latest showreel, which highlights:
 
 ## ✉️ Contact
 * **LinkedIn:** https://www.linkedin.com/in/tadas-cikanavičius/ 
+* **Academic email:** tadas.cikanavicius@ktu.edu
 * **Personal email:** tadascikanavicius090@gmail.com

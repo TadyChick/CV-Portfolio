@@ -82,6 +82,31 @@
       <h3>Multimedia and visual storytelling</h3>
       <div class="projects-grid">
 
+        
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('the-silent-protest')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button">
+              <img src="assets/Play.svg" alt="Play Icon">
+            </div>
+            <img src="assets/the-silent-protest.png" alt="Project Thumbnail" class="main-image">
+            
+            <div class="gradient-overlay"></div>
+
+            <div class="labels-wrapper">
+              <div class="badge">
+                <img src="assets/best-execution.png" alt="icon">
+                <span>Defended Bachelor's thesis 9/10</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Full production of a 3D animated short film using optimization methods for Bachelor's thesis</p>
+            <h4 class="project-title">The Silent Protest</h4>
+          </div>
+        </div>
+
         <!-- PROJECT CARD -->
         <div class="project-card" onclick="openProject('uninvited-guests')" style="cursor: pointer;">
           <div class="image-container">
@@ -249,7 +274,7 @@
         <!-- PROJECT CARD -->
         <div class="project-card">
           <div class="image-container">
-            <img src="assets/jaunyste-website.png" alt="Project Thumbnail" class="main-image">
+            <img src="assets/jaunyste-web-thumb.png" alt="Project Thumbnail" class="main-image">
             
             <div class="gradient-overlay"></div>
 
@@ -362,6 +387,7 @@
 <script>
         // 1. DATABASE: Map your #hashes to YouTube IDs
         const projectData = {
+            'the-silent-protest': { title: "The Silent Protest | Tylusis protestas (Bachelor's thesis)", ytId: 'F-70sgz_9mw' },
             'uninvited-guests': { title: 'Uninvited Guests | Nekviesti Svečiai', ytId: 'K6ctm9RXYHM' },
             'under-control': { title: 'Under Control | Kontrolėje', ytId: 'iQ6A5atLH3U' },
             'my-canine-friend': { title: 'TV show prototype - My Canine Friend | Mano Draugas Šuo', ytId: 'T0toD5GmbNs' },
