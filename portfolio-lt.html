@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tadas Cikanavičius</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio-style.css">
+</head>
+<body>
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+            <div class="close-header">
+                <div class="close-area" onclick="closeModal()">
+                    <span class="x-btn">&times;</span>
+                    <span class="close-text">Uždaryti</span>
+                </div>
+            </div>
+
+            <div class="video-wrapper">
+                <div class="loader-container">
+                    <div class="spinner"></div>
+                </div>
+                <iframe id="modalIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <h3 id="modalTitle">Projekto pavadinimas</h3>
+        </div>
+    </div>
+
+    <div class="header-s">
+        <div class="lang-switch">
+            <a href="portfolio.html">EN</a>
+            <a href="portfolio-lt.html" class="is-active">LT</a>
+        </div>
+        <div class="main-wrap">
+            <div class="profile-photo">
+            <img src="assets/tadas_profile.png" alt="Profilio nuotraukos vietaženklis">
+            </div>
+            <div class="hero-info">
+            <div class="name">Tadas</div>
+            <div class="surname">Cikanavičius</div>
+            <div class="role">Skaitmeninio turinio kūrėjas</div>
+            <div class="contacts-wrap">
+                <div class="location">
+                    <div><img src="assets/location_on.svg" alt="KTU logotipas"></div>
+                    <div class="contacts-t">Kaunas</div>
+                </div>
+
+                <div class="telephone">
+                    <div><img src="assets/phone.svg" alt="KTU logotipas"></div>
+                    <div class="contacts-t">+370 674 23729</div>
+                </div>
+
+                <div class="email">
+                    <div><img src="assets/email.svg" alt="KTU logotipas"></div>
+                    <div class="contacts-t">tadascikanavicius090@gmail.com</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-t"><h1>PORTFOLIO</h1></div>
+
+    <!-- SHOWREEL CARD -->
+    <section class="featured-video-section">
+        <div class="showreel-card" onclick="openProject('showreel')">
+          <div class="image-container">
+            <div class="play-button">
+              <img src="assets/Play.svg" alt="Paleidimo ikona">
+            </div>
+            <img src="assets/showreel-thumb.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="project-info">
+              <h2 class="project-title">SHOWREEL 2026</h2>
+              <p class="description">Geriausių 3D darbų ir skaitmeninio turinio kūrimo per pastaruosius metus rinkinys</p>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="project-s">
+      <h3>Multimedija ir vizualinis pasakojimas</h3>
+      <div class="projects-grid">
+
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('the-silent-protest')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button">
+              <img src="assets/Play.svg" alt="Paleidimo ikona">
+            </div>
+            <img src="assets/the-silent-protest.png" alt="Projekto miniatiūra" class="main-image">
+
+            <div class="gradient-overlay"></div>
+
+            <div class="labels-wrapper">
+              <div class="badge">
+                <img src="assets/best-execution.png" alt="ikona">
+                <span>Apgintas bakalauras 9/10</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Pilnas 3D animuoto kūrinio gamybos procesas, naudojant optimizavimo metodus bakalauro baigiamajam darbui</p>
+            <h4 class="project-title">The Silent Protest</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('uninvited-guests')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button">
+              <img src="assets/Play.svg" alt="Paleidimo ikona">
+            </div>
+            <img src="assets/uninvited-guests.png" alt="Projekto miniatiūra" class="main-image">
+
+            <div class="gradient-overlay"></div>
+
+            <div class="labels-wrapper">
+              <div class="badge">
+                <img src="assets/best-execution.png" alt="ikona">
+                <span>„geriausias įgyvendinimas“ 3D modulyje</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Komandos vadovas 3D animaciniame trumpametražiame filme</p>
+            <h4 class="project-title">Nekviesti svečiai</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('under-control')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img src="assets/under-control.png" alt="Projekto miniatiūra" class="main-image">
+
+            <div class="gradient-overlay"></div>
+
+            <div class="labels-wrapper">
+              <div class="badge">
+                <img src="assets/best-rated.png" alt="ikona">
+                <span>„geriausias įvertinimas“ A.V. laboratorijos modulyje</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Prodiuseris ir komandos vadovas trumpametražiame filme</p>
+            <h4 class="project-title">Kontrolėje</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('my-canine-friend')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img src="assets/my-canine-friend.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Techninis/kūrybinis vadovas ir operatorius TV laidos prototipe</p>
+            <h4 class="project-title">Mano Draugas Šuo</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('itu')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img style="object-position: 100% 100%;" src="assets/ITU-male-thumb.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Audiovizualinio 3D animacijos projekto kūrėjas -</p>
+            <h4 class="project-title">„Į nežinomybę“ | Vyriška versija - feat. Ry & Rusnė</h4>
+          </div>
+        </div>
+
+                <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('behind-the-matrix')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img  src="assets/behind-the-matrix-thumb.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Individualaus 2D animacijos trumpametražio filmo kūrėjas</p>
+            <h4 class="project-title">Už Matricos ribų</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('perfumes')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img  src="assets/perfume-thumb.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Reklaminės interpretacijos kūrėjas kvepalams</p>
+            <h4 class="project-title">„Fakhar Lattafa“ ir „JFENZI“</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+      <div class="project-card" onclick="openProject('youth')" style="cursor: pointer;">
+        <div class="image-container">
+          <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+          <img  src="assets/creative-youth-thumb.png" alt="Projekto miniatiūra" class="main-image">
+          <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="project-info">
+          <p class="description">TV laidos prototipo prodiuseris</p>
+          <h4 class="project-title">Kūrybiškasis Jaunimas</h4>
+        </div>
+      </div>
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('spongebob')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img  src="assets/spongebob-thumb.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Squidward personažo ir aplinkos animatorius animaciniame projekte</p>
+            <h4 class="project-title">Kempinė ir draugai</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('luktelk')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img  src="assets/Luktelk-THUMBNAIL.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Vizualinės karaokės ir VFX kūrėjas dainai</p>
+            <h4 class="project-title">„Luktelk“ (Silvester Belt)</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <a class="link" href="https://youtu.be/hgdXx1Ef16g" target="_blank">
+          <div class="project-card">
+            <div class="image-container">
+              <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+              <img  src="assets/flashbacks-inna-thumb.png" alt="Projekto miniatiūra" class="main-image">
+              <div class="gradient-overlay"></div>
+            </div>
+
+            <div class="project-info">
+              <p class="description">Vizualinės karaokės ir VFX kūrėjas dainai</p>
+              <h4 class="project-title">„Flashbacks“ (INNA)</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <h3>Programinės įrangos ir interaktyvioji inžinerija</h3>
+
+      <div class="projects-grid">
+        <!-- PROJECT CARD -->
+        <a class="link" href="https://www.chorasjaunyste.lt/" target="_blank">
+            <div class="project-card">
+              <div class="image-container">
+                <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+                <img src="assets/jaunyste-web-thumb.png" alt="Projekto miniatiūra" class="main-image">
+
+                <div class="gradient-overlay"></div>
+
+                <div class="labels-wrapper">
+                  <div class="badge">
+                    <img src="assets/incentive-award.png" alt="ikona">
+                    <span>Meno vadovės skirta skatinamoji premija</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <p class="description">Vykdomas pilno ciklo interneto svetainės kūrimas, paminint KTU akademinio choro 100-metį</p>
+                <h4 class="project-title">„Jaunystė“</h4>
+              </div>
+            </div>
+        </a>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('locatr')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img src="assets/locatr-app.png" alt="Projekto miniatiūra" class="main-image">
+
+            <div class="gradient-overlay"></div>
+
+            <div class="labels-wrapper">
+              <div class="badge">
+                <img src="assets/technorama1.png" alt="ikona">
+                <span>„Technorama 2025“ dalyvavimas KTU</span>
+              </div>
+              <div class="badge">
+                <img src="assets/technorama-rated.png" alt="ikona">
+                <span>Viešai išrinkta kaip 19-oji inovacija iš 74 – lrytas.lt</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Mobiliosios programėlės, skirtos laisvalaikio ir renginių planavimui, kūrėjas - </p>
+            <h4 class="project-title">„Locatr“</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card">
+          <div class="image-container">
+            <img src="assets/tds-game.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Unity paremto strateginio žaidimo kūrėjas</p>
+            <h4 class="project-title">„Tower Defense Seasons“</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('mmm')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img src="assets/mmm-thumb.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Front-end ir VFX dizaineris žiniatinklio žaidimui</p>
+            <h4 class="project-title">„Mosaic Memory Master“</h4>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" onclick="openProject('mall-map')" style="cursor: pointer;">
+          <div class="image-container">
+            <div class="play-button"><img src="assets/Play.svg" alt="Projekto miniatiūra" class="main-image"></div>
+            <img src="assets/ftf-thumb.png" alt="Projekto miniatiūra" class="main-image">
+            <div class="gradient-overlay"></div>
+          </div>
+
+          <div class="project-info">
+            <p class="description">Individualus prekybos centro žemėlapio kūrėjas, pateiktas kaip įnašas</p>
+            <h4 class="project-title">Roblox žaidimui „Flee The Facility“</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="side-links">
+    <h2>Nuorodos</h2>
+    <div class="link-wrap">
+    <a class="link" href="https://www.linkedin.com/in/tadas-cikanavičius/" target="_blank">
+
+      <div class="linked-line">
+        <img src="assets/Linkedin.svg" alt="LinkedIn logotipas">
+        <p>LinkedIn - Tadas Cikanavičius</p>
+      </div>
+    </a>
+
+
+    <a class="link" href="index-lt.html" target="_blank">
+
+      <div class="linked-line">
+        <p>CV - Tadas Cikanavičius</p>
+      </div>
+
+
+    </a>
+    </div>
+  </section>
+<script>
+        // 1. DUOMENŲ BAZĖ: YouTube video ID pagal projekto identifikatorių
+        const projectData = {
+            'the-silent-protest': { title: "Tylusis protestas | The Silent Protest (Bakalauro baigiamasis darbas)", ytId: 'F-70sgz_9mw' },
+            'uninvited-guests': { title: 'Nekviesti svečiai | Uninvited Guests', ytId: 'K6ctm9RXYHM' },
+            'under-control': { title: 'Kontrolėje | Under Control', ytId: 'iQ6A5atLH3U' },
+            'my-canine-friend': { title: 'TV laidos prototipas - Mano Draugas Šuo | My Canine Friend', ytId: 'T0toD5GmbNs' },
+            'itu': { title: '„Į nežinomybę“ | Into The Unknown - Vyriška versija - feat. Ry & Rusnė', ytId: 'wA1euszDNg8' },
+            'behind-the-matrix': { title: 'Už Matricos ribų | Behind The Matrix', ytId: 'MwDlL0TmZfI' },
+            'perfumes': { title: 'Reklama kvepalams „Fakhar Lattafa“ ir „JFENZI“', ytId: 'bFihyfLjovk' },
+            'spongebob': { title: 'Kempinė ir draugai | Sponge and friends', ytId: 'M0zG2KqQij0' },
+            'youth': { title: 'TV laidos prototipas - Kūrybiškasis Jaunimas | Creative Youth', ytId: 'UdYZE36pF2I' },
+            'luktelk': { title: 'Karaokė ir VFX dainai „Luktelk“ (Silvester Belt)', ytId: 'acNbtXhonoo' },
+            'locatr': { title: 'Mobilioji programėlė laisvalaikio ir renginių planavimui - Locatr', ytId: 'TqoUXBTs0lc' },
+            'mmm': { title: 'Žiniatinklio žaidimas - Mosaic Memory Master', ytId: 'wYMRgVa-XaI' },
+            'mall-map': { title: 'Prekybos centro žemėlapis Roblox žaidimui „Flee The Facility“', ytId: 'nhGEQ-XwhYE' },
+            'showreel': { title: 'Tadas Cikanavičius - Showreel 2026', ytId: 'JHzfS-iHx3o' }
+        };
+
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('modalIframe');
+        const title = document.getElementById('modalTitle');
+
+        // 2. ATIDARYMO LOGIKA
+        function openProject(id, isAutomatic = false) {
+            const data = projectData[id];
+            if (data) {
+                // Sukuriamas URL - mute=1 būtinas, kad autoplay veiktų iš karto
+                iframe.src = `https://www.youtube.com/embed/${data.ytId}?autoplay=1&loop=1&playlist=${data.ytId}&rel=0&modestbranding=1`;
+                document.getElementById('modalTitle').innerText = data.title;
+                modal.style.display = 'flex';
+            }
+        }
+
+        // 3. UŽDARYMO LOGIKA (sustabdo video ir paslepia langą)
+          function closeModal() {
+              const modal = document.getElementById('videoModal');
+              const iframe = document.getElementById('modalIframe');
+
+              // 1. Pradedama CSS animacija, pridedant klasę
+              modal.classList.add('is-closing');
+
+              // 2. Palaukiama, kol baigsis animacija (300ms)
+              setTimeout(() => {
+                  modal.style.display = 'none';      // Paslepiamas langas
+                  modal.classList.remove('is-closing'); // Atstatoma klasė kitam kartui
+                  iframe.src = "";                   // Sustabdomas video
+                  document.body.style.overflow = 'auto'; // Vėl įjungiamas slinkimas
+              }, 300);
+          }
+
+        // 4. AUTOMATINIS ĮKĖLIMAS ATIDARIUS PUSLAPĮ
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                // Palaukiama 1000ms (1 sekundė), prieš paleidžiant video
+                setTimeout(() => {
+                    openProject(hash, true);
+                }, 1000);
+            }
+        });
+
+        // Uždaroma, jei paspaudžiama už video ribų
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Slinkties efektas taikomas tik lietimui jautriuose įrenginiuose
+            if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+
+                // Pasirenkamos showreel ir visos projektų kortelės
+                const allCards = document.querySelectorAll('.project-card, .showreel-card');
+
+                const observerOptions = {
+                    root: null,
+                    // 'rootMargin' padeda suaktyvinti efektą šiek tiek anksčiau/vėliau
+                    // nei kortelė pasiekia tikslų centrą, kad būtų sklandžiau
+                    rootMargin: '-10% 0px -10% 0px',
+                    threshold: 0.6 // Kortelė turi būti matoma 60%, kad „suaktyvėtų“
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-active');
+                        } else {
+                            entry.target.classList.remove('is-active');
+                        }
+                    });
+                }, observerOptions);
+
+                allCards.forEach(card => observer.observe(card));
+            }
+        });
+    </script>
+</body>
+</html>
