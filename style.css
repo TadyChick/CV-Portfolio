@@ -55,7 +55,7 @@ body {
   font-size: 40px;
   position:absolute;
   padding-top:12px;
-  padding-left:8px;
+  padding-left:15px;
 }
 
 .h-b{
@@ -616,4 +616,48 @@ li {
   .location, .telephone, .email{
     font-size: 17px;
 }
+}
+
+/* LANGUAGE SWITCH */
+.lang-switch {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  z-index: 3;
+  display: flex;
+  gap: 6px;
+  background: rgba(15, 15, 18, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.lang-switch a {
+  font-family: 'Anta', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 16px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.lang-switch a.is-active {
+  background: var(--accent-light);
+  color: var(--text);
+  pointer-events: none;
+}
+
+.lang-switch a:not(.is-active):hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 1260px) {
+  .lang-switch {
+    top: 16px;
+    right: 16px;
+  }
 }
