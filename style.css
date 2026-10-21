@@ -84,10 +84,7 @@ body {
   top:0;border: 4px solid transparent;
 
   /* 2. Apply two backgrounds! */
-  background: 
-    linear-gradient(var(--dark)) padding-box,  /* The inside (white) */
-    linear-gradient(to top, var(--accent) 20%, var(--accent-light) 200%) border-box; /* The "outline" */
-
+  border-color: var(--accent);
   height:63px;
   border-radius: 10px;
   width:496px;
@@ -366,7 +363,7 @@ li {
 
 /* PROJECTS ----------------- */
 .project-s{
-  background: linear-gradient(to top, var(--accent) 95%, var(--accent-light) 100%);
+  background: var(--accent);
   margin:0;
   padding-left: 40px;
   padding-right: 30px;
@@ -470,7 +467,7 @@ li {
 }
 
 .project-info {
-  text-align: center;
+  text-align: left;
   margin-top: 8px;
   color: var(--text-light);
 }
@@ -493,8 +490,9 @@ li {
 }
 
 .project-s h3{
-  font-size:25px;
+  font-family: 'Anta', sans-serif; font-size: 28px; color: var(--text);
   padding-top:50px;
+  padding-left:20px
 }
 
 .project-s h4{
@@ -502,13 +500,13 @@ li {
 }
 
 .description {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 300;
   opacity: 0.9;
 }
 
 .project-title {
-  font-size: 25px;
+  font-family: 'Anta', sans-serif; font-size: 28px; color: var(--text);
   font-weight: 700;
   margin: 0;
 }
